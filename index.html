@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inversiones Inteligentes - Microsoft Word 365 | TBox</title>
+  <link rel="stylesheet" href="css/word365.css">
+  <link rel="stylesheet" href="css/quiz.css">
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+</head>
+<body>
+
+  <header class="titlebar">
+    <iconify-icon class="waffle" icon="fluent:grid-dots-24-filled"></iconify-icon>
+    <div class="app"><iconify-icon icon="fluent:document-24-filled"></iconify-icon> Word 365</div>
+    <div class="sep"></div>
+    <div class="doc">Inversiones Inteligentes · Competencias Digitales MOS</div>
+    <div class="spacer"></div>
+    <div class="logo-chip"><img src="https://www.tboxplanet.com/web/software/images/Logo_mediano.png" alt="TBox"></div>
+  </header>
+
+  <nav class="ribbon" aria-label="Secciones">
+    <a href="#inicio" class="active"><iconify-icon icon="fluent:home-24-regular"></iconify-icon> Inicio</a>
+    <a href="#teorico"><iconify-icon icon="fluent:question-circle-24-regular"></iconify-icon> Teórico</a>
+    <a href="#practico"><iconify-icon icon="fluent:edit-24-regular"></iconify-icon> Práctico</a>
+    <a href="#final"><iconify-icon icon="fluent:trophy-24-regular"></iconify-icon> Evaluación final</a>
+  </nav>
+
+  <main class="canvas">
+    <div class="paper">
+      <section class="hero" id="inicio">
+        <div class="hero-icon"><iconify-icon icon="fluent:document-24-filled"></iconify-icon></div>
+        <div>
+          <h1>Inversiones Inteligentes</h1>
+          <p>Fortalecimiento de competencias digitales MOS · Selecciona un módulo para practicar con cuestionarios teóricos o retos con calificación automática.</p>
+        </div>
+      </section>
+
+      <h2 class="group-title" id="teorico"><iconify-icon icon="fluent:question-circle-24-regular"></iconify-icon> Cuestionarios teóricos <span class="count">4</span></h2>
+      <p class="group-desc">Una pregunta a la vez con retroalimentación inmediata, racha, puntos de experiencia y medallas. Necesitas 70 % para aprobar.</p>
+      <div class="quiz-resumen" id="quizResumen"></div>
+      <div class="cards-grid">
+      <article class="card card-theory" onclick="abrirCuestionarioTeorico(1)">
+        <div class="card-badge">Teórico 1/4</div>
+        <div class="card-icon"><iconify-icon icon="fluent:text-font-24-regular"></iconify-icon></div>
+        <h3>1. Formato y Estilos de Texto</h3>
+        <p>Formatos, estilos de texto, listas, borrado de formato, efectos y reemplazo de texto.</p>
+        <button class="btn btn-theory"><iconify-icon icon="fluent:clipboard-task-24-regular"></iconify-icon> Realizar evaluación</button>
+      </article>
+      <article class="card card-theory" onclick="abrirCuestionarioTeorico(2)">
+        <div class="card-badge">Teórico 2/4</div>
+        <div class="card-icon"><iconify-icon icon="fluent:document-24-regular"></iconify-icon></div>
+        <h3>2. Configuración de Página</h3>
+        <p>Tamaño de papel, orientación, márgenes, columnas, diseño del documento y marcas de agua.</p>
+        <button class="btn btn-theory"><iconify-icon icon="fluent:clipboard-task-24-regular"></iconify-icon> Realizar evaluación</button>
+      </article>
+      <article class="card card-theory" onclick="abrirCuestionarioTeorico(3)">
+        <div class="card-badge">Teórico 3/4</div>
+        <div class="card-icon"><iconify-icon icon="fluent:table-24-regular"></iconify-icon></div>
+        <h3>3. Tablas e Ilustraciones</h3>
+        <p>Tablas, filas y columnas, imágenes, íconos, formas y cuadros de texto.</p>
+        <button class="btn btn-theory"><iconify-icon icon="fluent:clipboard-task-24-regular"></iconify-icon> Realizar evaluación</button>
+      </article>
+      <article class="card card-theory" onclick="abrirCuestionarioTeorico(4)">
+        <div class="card-badge">Teórico 4/4</div>
+        <div class="card-icon"><iconify-icon icon="fluent:book-24-regular"></iconify-icon></div>
+        <h3>4. Referencias y Revisión</h3>
+        <p>Encabezados, pies de página, notas al pie, comentarios, metadatos y exportación a PDF.</p>
+        <button class="btn btn-theory"><iconify-icon icon="fluent:clipboard-task-24-regular"></iconify-icon> Realizar evaluación</button>
+      </article>
+      </div>
+
+      <h2 class="group-title" id="practico"><iconify-icon icon="fluent:edit-24-regular"></iconify-icon> Retos prácticos <span class="count">3</span></h2>
+      <p class="group-desc">Trabajas en Word con el panel de indicaciones al lado: cronómetro, subtareas con casilla y calificación inmediata sobre 100 puntos según la dificultad de cada subtarea.</p>
+      <details class="howto">
+        <summary><iconify-icon icon="fluent:window-multiple-24-regular"></iconify-icon> ¿Cómo trabajar con la pantalla dividida (Word 75 % + panel 25 %)?</summary>
+        <ol>
+          <li>Descomprime el proyecto y haz doble clic en <code>Iniciar_Reto1.bat</code>, <code>Iniciar_Reto2.bat</code> o <code>Iniciar_Reto3.bat</code> (Windows con Word 365 y Edge o Chrome).</li>
+          <li>Se abre el documento base en Word y el panel de indicaciones en el espacio restante de la pantalla.</li>
+          <li>Escribe tu nombre completo, marca cada subtarea al terminarla y al final sube tu .docx en la pestaña <b>Entrega</b>.</li>
+          <li>Si maximizas o mueves alguna ventana, usa el botón verde <b>Acoplar 25 %</b> del panel o ejecuta <code>Reacomodar_Ventanas.bat</code>.</li>
+        </ol>
+        <p>Sin Windows o sin el lanzador: abre el reto con el botón de la tarjeta y trabaja con el documento base descargado desde el Sumario.</p>
+      </details>
+      <div class="cards-grid">
+      <article class="card card-practical">
+        <div class="card-badge badge-practical">Práctico 1/3</div>
+        <div class="card-icon"><iconify-icon icon="fluent:document-edit-24-regular"></iconify-icon></div>
+        <h3>Reto 1: Formato y Estilos</h3>
+        <p>Portada, secciones, encabezado y marca de agua, Título 1, efectos, reemplazo, listas multinivel, tablas, logo y notas al pie.</p>
+        <a href="reto_formato.html" target="_blank" rel="noopener" class="btn btn-practical"><iconify-icon icon="fluent:open-24-regular"></iconify-icon> Abrir reto (100 pts)</a>
+      </article>
+      <article class="card card-practical">
+        <div class="card-badge badge-practical">Práctico 2/3</div>
+        <div class="card-icon"><iconify-icon icon="fluent:image-edit-24-regular"></iconify-icon></div>
+        <h3>Reto 2: Estilos, Imágenes y Elementos Especiales</h3>
+        <p>Título 2, diseño Sombreado, borrar formato, símbolo ©, resaltado, imagen con saturación, estilo de tabla, viñeta con imagen y comentario.</p>
+        <a href="reto_formato2.html" target="_blank" rel="noopener" class="btn btn-practical"><iconify-icon icon="fluent:open-24-regular"></iconify-icon> Abrir reto (100 pts)</a>
+      </article>
+      <article class="card card-practical">
+        <div class="card-badge badge-practical">Práctico 3/3</div>
+        <div class="card-icon"><iconify-icon icon="fluent:shapes-24-regular"></iconify-icon></div>
+        <h3>Reto 3: Formatos Avanzados y Elementos Visuales</h3>
+        <p>Encabezado Con bandas, número Círculo, márgenes, color de página, columnas, nota al pie, propiedades, cotización, ícono y forma.</p>
+        <a href="reto_formato3.html" target="_blank" rel="noopener" class="btn btn-practical"><iconify-icon icon="fluent:open-24-regular"></iconify-icon> Abrir reto (100 pts)</a>
+      </article>
+      </div>
+
+      <h2 class="group-title" id="final"><iconify-icon icon="fluent:trophy-24-regular"></iconify-icon> Evaluación integradora</h2>
+      <p class="group-desc">Cierre del curso con los 22 temas. Se inicia con Iniciar_Examen_Final.bat.</p>
+      <div class="cards-grid">
+      <article class="card card-final" onclick="abrirRetoFinal()">
+        <div class="card-badge badge-final">Final</div>
+        <div class="card-icon"><iconify-icon icon="fluent:trophy-24-regular"></iconify-icon></div>
+        <h3>Proyecto Integrador Final</h3>
+        <p>Examen práctico integrador de 20 subtareas con documento base, cronómetro, pantalla dividida (Word 75 % / panel 25 %) y tablero de resultados sobre 1000 puntos.</p>
+        <button class="btn btn-final"><iconify-icon icon="fluent:flag-24-regular"></iconify-icon> Iniciar examen final</button>
+      </article>
+      </div>
+    </div>
+  </main>
+  <script src="js/data.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    // Resalta la pestaña de la cinta según la sección visible
+    const tabs=[...document.querySelectorAll('.ribbon a')];
+    const secs=tabs.map(a=>document.querySelector(a.getAttribute('href')));
+    addEventListener('scroll',()=>{let i=0;secs.forEach((s,k)=>{if(s.getBoundingClientRect().top<140)i=k});tabs.forEach((a,k)=>a.classList.toggle('active',k===i))},{passive:true});
+  </script>
+</body>
+</html>

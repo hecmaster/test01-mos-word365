@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen TBox - Reto 1: Formato y Estilos</title>
+  <link rel="stylesheet" href="css/word365.css">
+  <link rel="stylesheet" href="css/examen-final.css">
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body class="exam">
+
+<!-- Pantalla de inicio: solicita el nombre del estudiante -->
+<div class="start" id="start" hidden>
+  <div class="start-box">
+    <h1>Reto 1 · Formato y Estilos</h1>
+    <p>Evaluación práctica de Microsoft Word 365 · 11 subtareas en 5 áreas · 100 puntos · calificación inmediata.</p>
+    <ol>
+      <li>Escribe tu <b>nombre completo</b>. Es obligatorio: luego deberás escribirlo igual en el documento, como indican las subtareas.</li>
+      <li>Al comenzar se inicia el <b>cronómetro</b>; el tiempo trabajado aparece en tu resultado.</li>
+      <li><b>Abre el documento base</b> en Word (el lanzador lo hace por ti) y realiza allí todas las tareas.</li>
+      <li>Trabaja en Word con el panel de indicaciones a un lado, y al terminar sube tu <b>.docx</b> en la pestaña <b>Entrega</b> para ver tu calificación.</li>
+    </ol>
+    <label for="nombre"><b>Nombre completo</b></label>
+    <input type="text" id="nombre" placeholder="Nombre y apellidos" autocomplete="name">
+    <div class="err" id="nombreErr"></div>
+    <div class="row">
+      <button class="btn btn-tb" id="btnComenzar"><iconify-icon icon="fluent:play-24-filled"></iconify-icon> Comenzar reto</button>
+      <button class="btn btn-tb-o" id="btnPanel" title="Coloca esta ventana en el 25% de la pantalla"><iconify-icon icon="fluent:panel-bottom-24-regular"></iconify-icon> Acoplar panel al 25 %</button>
+    </div>
+  </div>
+</div>
+
+<div class="exam-app" id="app" hidden>
+  <header class="ex-bar">
+    <div class="proj"><iconify-icon icon="fluent:question-circle-24-regular"></iconify-icon> Reto 1 · Word 365</div>
+    <div class="who" id="quien"></div>
+    <div class="avance" title="Subtareas marcadas"><span id="avTxt">0/20 subtareas</span><i><s id="avBar"></s></i></div>
+    <div class="sp"></div>
+    <div class="dock" id="dock">
+      <button class="dock-main" id="btnDock" title="Colocar esta ventana en el 25 % de la pantalla"><iconify-icon id="dockIcon" icon="fluent:panel-bottom-24-regular"></iconify-icon><span class="lbl" id="dockLbl">Acoplar 25 %</span></button><button class="dock-more" id="btnDockMenu" aria-haspopup="true" aria-expanded="false" aria-label="Más opciones de ventana" title="Más opciones de ventana"><iconify-icon icon="fluent:chevron-down-24-regular"></iconify-icon></button>
+      <div class="dock-menu" id="dockMenu" role="menu" hidden>
+        <button role="menuitem" data-acc="abajo"><iconify-icon icon="fluent:panel-bottom-24-regular"></iconify-icon><span><b>Acoplar abajo</b><small>Ventana al 25 % del alto de la pantalla</small></span></button>
+        <button role="menuitem" data-acc="derecha"><iconify-icon icon="fluent:panel-right-24-regular"></iconify-icon><span><b>Acoplar a la derecha</b><small>Ventana al 25 % del ancho de la pantalla</small></span></button>
+        <button role="menuitem" data-acc="ampliar"><iconify-icon icon="fluent:full-screen-maximize-24-regular"></iconify-icon><span><b>Ampliar ventana</b><small>Útil para ver el reporte completo</small></span></button>
+        <p>Para reacomodar también <b>Word</b> (75 %), ejecuta <code>Reacomodar_Ventanas.bat</code> de la carpeta del proyecto.</p>
+      </div>
+    </div>
+    <div class="timer" title="Tiempo trabajado"><iconify-icon icon="fluent:timer-24-regular"></iconify-icon><span id="reloj">00:00:00</span></div>
+    <button id="btnResultado" hidden><iconify-icon icon="fluent:data-bar-vertical-24-regular"></iconify-icon> Resultado</button>
+    <button id="btnReiniciar"><iconify-icon icon="fluent:arrow-reset-24-regular"></iconify-icon> Reiniciar</button>
+  </header>
+  <nav class="ex-tabs" id="tabs" aria-label="Tareas"></nav>
+  <main class="instr cols" id="instr"></main>
+  <footer class="ex-actions">
+    <button class="b-nav" id="btnPrev"><iconify-icon icon="fluent:arrow-left-24-regular"></iconify-icon> Área anterior</button>
+    <button class="b-green" id="btnOk"><iconify-icon icon="fluent:checkmark-24-regular"></iconify-icon> Marcar todas como hechas</button>
+    <button class="b-blue" id="btnRev"><iconify-icon icon="fluent:flag-24-regular"></iconify-icon> Marcar para revisión</button>
+    <button class="b-nav" id="btnNext">Siguiente área <iconify-icon icon="fluent:arrow-right-24-regular"></iconify-icon></button>
+    <button class="b-navy" id="btnAyuda"><iconify-icon icon="fluent:lightbulb-24-regular"></iconify-icon> Ayuda</button>
+  </footer>
+</div>
+
+<div class="dash" id="dash" hidden></div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="js/docx-lib.js"></script>
+<script src="js/recursos-reto1.js"></script>
+<script src="js/checker-reto1.js"></script>
+<script src="js/cfg-reto1.js"></script>
+<script src="js/examen-engine.js"></script>
+</body>
+</html>

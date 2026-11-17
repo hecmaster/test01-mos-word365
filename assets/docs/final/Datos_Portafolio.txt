@@ -1,0 +1,5 @@
+Instrumento	Monto (USD)	Rendimiento anual	Plazo
+Bonos del Tesoro	5000	4.2%	5 años
+Acciones tecnológicas	3000	9.8%	3 años
+Fondo mixto	2500	6.5%	4 años
+Depósito a plazo	1500	3.1%	1 año

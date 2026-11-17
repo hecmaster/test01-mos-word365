@@ -1,0 +1,47 @@
+INVERSIONES INTELIGENTES · MICROSOFT WORD 365 (TBox)
+=====================================================
+
+CONTENIDO
+  index.html ................ portal: 4 cuestionarios teóricos, 3 retos prácticos y el examen final
+  reto_formato.html ......... Reto 1 · Formato y Estilos            (100 pts, 11 subtareas, 5 áreas)
+  reto_formato2.html ........ Reto 2 · Estilos e Imágenes           (100 pts, 10 subtareas, 5 áreas)
+  reto_formato3.html ........ Reto 3 · Formatos Avanzados           (100 pts, 10 subtareas, 4 áreas)
+  examen_final.html ......... Proyecto Final integrador             (1000 pts, 20 subtareas, 5 tareas)
+  docente/ .................. rúbrica, soluciones oficiales y archivos antiguos (NO publicar esta carpeta)
+
+CÓMO USAR LA PANTALLA DIVIDIDA (Word 75 % + panel de indicaciones 25 %)  · Windows + Word 365 + Edge o Chrome
+  1. Descomprime el zip (no ejecutes los .bat desde dentro del zip).
+  2. Doble clic en el lanzador que corresponda:
+       Iniciar_Reto1.bat   Iniciar_Reto2.bat   Iniciar_Reto3.bat   Iniciar_Examen_Final.bat
+     Copia el documento base a Documentos\TBox_Word\<reto>\, abre Word (75 %) y el panel (25 %).
+  3. Opciones (escríbelas después del nombre en una ventana de comandos):
+       -Modo Derecha   Word 75 % del ancho | panel 25 % del ancho (por defecto: abajo, 75 % / 25 % del alto)
+       -Nuevo          descarta el avance anterior y copia un documento base limpio
+  4. Si el estudiante maximiza o mueve ventanas: botón verde "Acoplar 25 %" del panel, o doble clic en
+     Reacomodar_Ventanas.bat (reubica Word y el panel abiertos).
+  5. Sin Windows/lanzador: abrir el .html del reto y trabajar con el documento base descargado desde el Sumario.
+
+FLUJO DEL ESTUDIANTE
+  Nombre completo -> cronómetro -> subtareas por área (casilla en cada una) -> pestaña Entrega (sube el .docx;
+  el examen final también el PDF) -> tablero con puntaje, tiempo, qué reforzar y pistas
+  -> "Finalizar y descargar entrega": devuelve el .docx con el tiempo, el puntaje y un código de verificación
+  en las propiedades personalizadas (Archivo > Información > Propiedades > Propiedades avanzadas > Personalizar).
+
+ADJUNTAR EL ARCHIVO PARA REVISIÓN (pestaña Entrega)
+  - Botón verde «Seleccionar archivo…»: abre la ventana de Windows. Si aparece detrás de Word, búscala en la barra de tareas.
+  - Si no se abre en ~1 segundo, el panel usa automáticamente el selector alternativo del navegador (Edge/Chrome).
+    También está disponible a mano con el enlace «Selector alternativo».
+  - Siempre se puede ARRASTRAR el .docx (o el .pdf) hasta el recuadro punteado, o soltarlo en cualquier parte del panel.
+  - El panel muestra el nombre y tamaño del archivo elegido antes de evaluar.
+
+CALIFICACIÓN
+  Cada reto suma 100 puntos (aprobado 70); el examen final 1000 (aprobado 700). Los puntos se reparten por dificultad
+  (Básico 1 : Intermedio 2 : Avanzado 3). Detalle completo en docente/Rubrica_Calificacion.md.
+  El evaluador lee el XML del .docx y acepta distintas formas válidas de ejecutar cada tarea.
+
+CUESTIONARIOS
+  Una pregunta a la vez, orden aleatorio, racha, XP, medallas, repaso de fallos y mejor resultado guardado en el navegador.
+
+MANTENIMIENTO
+  Los archivos de los retos están incrustados en js/recursos-*.js para que se descarguen sin salir del panel.
+  Si cambias un documento base, regenera esos archivos (base64 del archivo) y revisa su evaluador (js/checker-*.js).

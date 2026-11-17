@@ -1,0 +1,6 @@
+Carpeta docente: NO la publiques en el sitio de los estudiantes.
+  soluciones/  Documentos base originales y soluciones oficiales (Word) de cada reto.
+  legacy/      Versiones anteriores (evaluadores y estilos antiguos, reto_formatov2.html) conservadas solo como referencia.
+  Rubrica_Calificacion.md  Criterios, niveles de dificultad y puntos de cada reto.
+Para validar un cambio en un evaluador: súbele al reto correspondiente la solución oficial; debe dar 100/100,
+y el documento base sin resolver debe dar 0.
